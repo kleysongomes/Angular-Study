@@ -1,0 +1,14 @@
+<p>home works!</p>
+<app-footer></app-footer>
+
+<button (click)="testeBtn()">{{textButton}}</button>
+
+@if (nCount == 1){
+    <h2>{{nCount}}</h2>
+}
+
+@for (item of lista; track item){
+    <p>{{item}}</p>
+} @empty {
+    <p>Lista vazia!!</p>
+}
